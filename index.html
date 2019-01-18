@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RuPaul Game</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<script type="text/javascript" src="titles.js"></script>
+		<script type="text/javascript">
+			if (!Array.prototype.shuffle) {
+				Array.prototype.shuffle = function () {
+					return this.sort(() => Math.random() - 0.5);
+				};
+			}
+			
+			var ruPaulField,
+				dragRaceField,
+				lastIndex;
+			
+			function randInt(min, max) {
+				return Math.floor(Math.random() * (max - min)) + min;
+			}
+			
+			
+			function pickNewTitle() {
+				// Pick a new title different from the last one.
+				var newTitleIndex = lastIndex;
+				while (newTitleIndex === lastIndex) {
+					newTitleIndex = randInt(0, TITLES.length);
+				}
+				var newTitle = TITLES[newTitleIndex];
+				
+				// Update the on-screen text.
+				ruPaulField.textContent = 'RuPaul\'s ' + newTitle.title;
+				dragRaceField.textContent = newTitle.creator + ' Drag Race';
+				
+				// Set the new last index.
+				lastIndex = newTitleIndex;
+			}
+			
+			function showInfo() {
+				alert('This is based on a game in which you take the name of a piece of media primarily referred to by its creator with its title (e.g., Sid Meier\'s Civilization), and substitute in RuPaul, host of RuPaul\'s Drag Race.  I do not know where or how this game got started, but some of my friends introduced me to it, and hence, this site.');
+			}
+			
+			window.onload = function () {
+				ruPaulField = document.getElementById('rupaul-title');
+				dragRaceField = document.getElementById('drag-race-title');
+				
+				document.getElementById('new-title-button').onclick = pickNewTitle;
+				document.getElementById('about-button').onclick = showInfo;
+				
+				// Generate a move to start.
+				pickNewTitle();
+			};
+		</script>
+		
+		<link rel="stylesheet" type="text/css" href="material-elements.css" />
+		<style type="text/css">
+			body {
+				text-align: center;
+			}
+			#rupaul-title {
+				font-size: 150%;
+				font-style: italic;
+				font-weight: bold;
+				margin-bottom: 1.25em;
+			}
+			#drag-race-title {
+				font-style: italic;
+				font-weight: bold;
+			}
+			.small-text {
+				font-size: 75%;
+			}
+			footer {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				
+				padding: 4px;
+				font-size: 80%;
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<p>It's the next big thing in pop culture:</p>
+		<p id="rupaul-title">...</p>
+		<p class="small-text">Or, if you prefer, <span id="drag-race-title">...</span>?</p>
+		<br />
+		<button id="new-title-button">Another!</button>
+		<br />
+		<br />
+		<br />
+		<br />
+		<button id="about-button">What even is this?</button>
+		<footer>
+			<a href="https://zmyaro.com" target="_blank">By Zachary Yaro</a>
+			&nbsp;&middot;&nbsp;
+			<a href="https://github.com/zmyaro/rupaul-game" target="_blank">Source code on GitHub</a>
+		</footer>
+	</body>
+</html>
