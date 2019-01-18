@@ -10,6 +10,9 @@ var TITLES = [
 		title: 'A Series Of Unfortunate Events'
 	}, {
 		creator: 'Mordenkainen\'s',
+		title: 'Marvelous Mansion'
+	}, {
+		creator: 'Mordenkainen\'s',
 		title: 'Tome Of Foes'
 	}, {
 		creator: 'Muppets',
@@ -24,10 +27,19 @@ var TITLES = [
 		creator: 'Strong Bad\'s',
 		title: 'Cool Game For Attractive People'
 	}, {
+		creator: 'Tasha\'s',
+		title: 'Hideous Laughter'
+	}, {
+		creator: 'Tenser\'s',
+		title: 'Floating Disk'
+	}, {
 		creator: 'Tom Clancy\'s',
 		title: 'Ghost Recon'
 	}, {
 		creator: 'Tom Clancy\'s',
 		title: 'Rainbow Six'
+	}, {
+		creator: 'Xanathar\'s',
+		title: 'Guide To Everything'
 	}
 ];
