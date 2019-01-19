@@ -9,6 +9,9 @@ var TITLES = [
 		creator: 'Lemony Snicket\'s',
 		title: 'A Series Of Unfortunate Events'
 	}, {
+		creator: 'Luigi\'s',
+		title: 'Mansion'
+	}, {
 		creator: 'Mordenkainen\'s',
 		title: 'Marvelous Mansion'
 	}, {
