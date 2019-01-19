@@ -15,6 +15,9 @@ var TITLES = [
 		creator: 'Luigi\'s',
 		title: 'Mansion'
 	}, {
+		creator: 'Miss Peregrine\'s',
+		title: 'Home For Peculiar Children'
+	}, {
 		creator: 'Mordenkainen\'s',
 		title: 'Marvelous Mansion'
 	}, {
