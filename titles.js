@@ -1,5 +1,8 @@
 var TITLES = [
 	{
+		creator: 'Foster\'s',
+		title: 'Home For Imaginary Friends'
+	}, {
 		creator: 'Howl\'s',
 		title: 'Moving Castle'
 	}, {
