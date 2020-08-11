@@ -48,6 +48,9 @@ var TITLES = [
 		creator: 'Tom Clancy\'s',
 		title: 'Rainbow Six'
 	}, {
+		creator: 'Tony Hawk\'s',
+		title: 'Pro Skater'
+	}, {
 		creator: 'Xanathar\'s',
 		title: 'Guide To Everything'
 	}
