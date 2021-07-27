@@ -30,6 +30,9 @@ var TITLES = [
 		creator: 'Muppets',
 		title: 'Most Wanted'
 	}, {
+		creator: 'Ned\'s',
+		title: 'Declassified School Survival Guide'
+	}, {
 		creator: 'Otto\'s',
 		title: 'Irresistible Dance'
 	}, {
