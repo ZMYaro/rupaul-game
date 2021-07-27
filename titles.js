@@ -15,6 +15,9 @@ var TITLES = [
 		creator: 'Luigi\'s',
 		title: 'Mansion'
 	}, {
+		creator: 'Mike\'s',
+		title: 'Hard Lemonade'
+	}, {
 		creator: 'Miss Peregrine\'s',
 		title: 'Home For Peculiar Children'
 	}, {
@@ -26,6 +29,9 @@ var TITLES = [
 	}, {
 		creator: 'Muppets',
 		title: 'Most Wanted'
+	}, {
+		creator: 'Otto\'s',
+		title: 'Irresistible Dance'
 	}, {
 		creator: 'Ripley\'s',
 		title: 'Believe It Or Not'
